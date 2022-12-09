@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer details</title>
+     <!-- fontawesome -->
+
+     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+     <!-- bootstrap -->
+     
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+       <!-- JavaScript Bundle with Popper -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="iDetails.css">
+     
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     
+</head>
+<body>
+    <div class="alogin">
+        <div class="jumbotron">
+            <h1>Sign up successfull!!</h1>
+            <p>Fill out the form below for us to understand you better.</p>
+        </div>
+    </div>
+    <!-- form section -->
+    <div class="header">
+        <h2>Welcome to C-Cal</h2>
+        <p>Please fill out the necessary details.</p>
+        <div class="row">
+            <div class="col-lg-6">
+        <form action="idetails.php" method="post">
+
+          <label for="name" class="form-label" style="text-align: left;">Name:</label>
+             <input type="text" id="name" name="name" class="form-control" placeholder="username">
+             <br>
+           <label for="age" class="form-label" style="text-align: left;">Age:</label>
+             <input type="number" id="age" name="age" class="form-control" placeholder="age">
+             <br>
+             <p>Height</p>
+                  <div class="row">
+                   
+                    <div class="col-lg-6">
+                      <label for="fe" class="form-label" style="text-align: left;">Feet:</label>
+                      <input type="number" id="fe" name="feet" class="form-control" placeholder="feet">
+                   </div>
+                   <div class="col-lg-6">
+                     <label for="in" class="form-label" style="text-align: left;">inches:</label>
+                     <input type="number" id="in" name="inch" class="form-control" placeholder="inches">
+                    </div>
+            </div>
+            <br>
+            <label for="weight" class="form-label" style="text-align: left;">weight:</label>
+            <input type="number" id="weight" name="weight" class="form-control" placeholder="weight in kg">
+<br>
+            <label for="BMI" class="form-label" style="text-align: left;">BMI:</label>
+            <input type="number" id="BMI" name="bmi" class="form-control" placeholder="BMI">
+             <br>
+             <button type="submit" class="btn btn-outline-success btn-block mb-4" id="submitBtn" >
+               submit
+              </button>
+        </div>
+        <div class="col-lg-6">
+        <!-- 2nd part -->
+        <img style="height:700px; width:700px; margin-top:-150px;" src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-135.jpg?w=2000" alt="">
+    </div>
+    </div>
+        </form>
+
+    </div>
+</body>
+</html>
