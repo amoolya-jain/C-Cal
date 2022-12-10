@@ -1,7 +1,7 @@
 * {
    
     font-size: 16px;
-    color: #333;
+    color: rgb(254, 250, 250);
 }
 body {
     margin: 0;
@@ -10,6 +10,9 @@ body {
     border: 0;
     background: linear-gradient(to bottom right, #03989e, #9ee2f3); 
     /* background-color: #03989e; */
+}
+h1,h2{
+    color:white;
 }
 .form {
     background-color: rgb(255, 255, 255);
@@ -103,7 +106,7 @@ h1 {
     font-size: 30px;
     font-weight: 300;
     text-align: center;
-    color: #289df6;
+    color: #f9fcff;
     padding-top: 15px;
     display: block;
 }
@@ -121,7 +124,7 @@ h3 {
 h3 b {
     font-size: 32px;
     font-weight: 300;
-    color: #289df6;
+    color: #f9fcff;
 }
 .checkmark:after {
     content: "";

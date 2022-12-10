@@ -168,7 +168,8 @@ border-color: black;
     padding:1% 15% 7% 15%;
 }
 .testi-img{
-  width:10%;
+  width:20%;
+  height: 130px;
   border-radius: 100%;
 }
 .testi-head{

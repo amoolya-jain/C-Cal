@@ -16,9 +16,9 @@ $pass=$_POST['password'];
 $res=mysqli_query($con,"SELECT  * from customer_details where email='$emailId'");
 $row=mysqli_num_rows($res);   
 if($row==1){
-    echo "<script>alert('Mail id already exsit. pPlease sign up with other mail id.')</script>";
+    echo "<center><h3><script>alert('Mail id already exsit.Please sign up with other mail id.')</script></h3></center>";
     // header("refresh:0;url=signup.html");
-    header('location: signup.html');
+    header("refresh:0;url=signup.html");
 //  echo 'email already exsit';
 }
 else
