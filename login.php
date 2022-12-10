@@ -13,8 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $result = mysqli_query($con,$sql);
     $num=mysqli_num_rows($result);
     if($num==1){
-        session_start();
-        $_SESSION['username']=$usermail;
+       
         header("location: index.html");
     }
     else{

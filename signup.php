@@ -7,7 +7,10 @@ if(!$con){
 }
 mysqli_select_db($con,"ccal");
 $username=$_POST['username'];
+
 $emailId=$_POST['mail'];
+session_start();
+$_SESSION['usermail']=$emailId;
 $phone=$_POST['phoneNo'];
 $pass=$_POST['password'];
 $res=mysqli_query($con,"SELECT  * from customer_details where email='$emailId'");

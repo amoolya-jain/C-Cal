@@ -5,13 +5,14 @@ if(!$con){
 
 }
 mysqli_select_db($con,"ccal");
-$name=$_POST['name'];
+// $Email=$_POST['mail'];
 $age=$_POST['age'];
 $feet=$_POST['feet'];
 $inch=$_POST['inch'];
 $weight=$_POST['weight'];
 $bmi=$_POST['bmi'];
-mysqli_query($con,"INSERT INTO customer_health_details VALUES('$name','$age','$feet','$inch','$weight','$bmi')")
+$mail=$_SESSION['usermail'];
+mysqli_query($con,"INSERT INTO customer_health_details VALUES('$mail','$age','$feet','$inch','$weight','$bmi')")
 or
 die(mysqli_connect_error());
 echo"succesfully inserted";
