@@ -13,8 +13,9 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
     $result = mysqli_query($con,$sql);
     $num=mysqli_num_rows($result);
     if($num==1){
-       
-        header("location: index.html");
+        echo "<center><h3><script>alert('Logged In successfully.')</script></h3></center>";
+        // header("location: index.html");
+        header("refresh:0;url=index.html");
     }
     else{
         echo "<center><h3><script>alert('Incorrect mail id or password.')</script></h3></center>";

@@ -84,10 +84,6 @@ border-color: black;
 </div>
 </div>
 </div>
-    <!-- <form action="https://formsubmit.co/amoolya0103@email.com" method="POST">
-    <input type="text" name="name" required>
-    <input type="email" name="email" required>
-      <button type="submit">Send</button>
-        </form>  -->
+    
 </body>
 </html>
