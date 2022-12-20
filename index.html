@@ -203,13 +203,13 @@
       <h2>Great journey with C-cal.</h2>
       <h5 style="padding:2%; line-height: 2;">C-cal gave me a wake up call to the way eating and made things clear what i needed to change. </h5>
       <img class="testi-img" src="https://static.toiimg.com/photo/90399663.cms" alt="">
-      <em>Pebbles, New York</em>
+      <em>Saksha, Delhi</em>
     </div>
     <div class="carousel-item">
       <h2 class="testimonial-text">Was eager to make a change.</h2>
       <h5 style="padding:2%; line-height: 2;">Now, when i have friends starting to run and getting frustated, I teall to just stick with it, eventully , you'll get faster.</h5>
       <img class="testi-img" src="https://media.istockphoto.com/id/1249420269/photo/young-smiling-handsome-man-in-casual-clothes-posing-isolated-on-blue-wall-background-studio.jpg?s=612x612&w=0&k=20&c=fr9I2Et7ApAJ9WSuZZRh83wpq_KoKtLXhoFvlfmffe8=" alt="">
-      <em>Beverly, Illinois</em>
+      <em>Jeev, Bangalore</em>
 
     </div>
 
@@ -263,11 +263,66 @@
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
           <p><i class="fas fa-home me-3"></i>Mangalore, India</p>
+          
+         
+      
+        <!-- <div class="popup" onclick="myFunction()">
           <p>
             <i class="fas fa-envelope me-3"></i>
             Ccal2022@gmail.com
           </p>
-          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <span class="popuptext" id="myPopup">  
+            <form action="mailto:Ccal2022@gmail.com" method="post" enctype="text/plain">
+              <label>your name:</label>
+              <input type="text" name="yourname" value=""><br />
+              <label>your mail id:</label>
+              <input type="email" name="youremail" value="">
+              <label>your message:</label><br />
+              <textarea name="yourmessage" rows="8" cols="80"></textarea>
+              <input type="submit" name="msg">
+            </form>
+          </span>
+        </div> -->
+        <!-- <button id="myBtn">Open Modal</button> -->
+        <p id="myBtn">
+          <i class="fas fa-envelope me-3"></i>
+          Ccal2022@gmail.com
+        </p>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="color:teal;   height: 400px; width: 600px; border-radius: 5%; opacity: 0.9;">
+    <span class="close">&times;</span>
+    <!-- <p>Some text in the Modal..</p> -->
+    <form action="mailto:Ccal2022@gmail.com" method="post" enctype="text/plain">
+               <h1 style="text-align:center">Contact Us</h1>
+               <br>
+               <div style="text-align: left; " class="row">
+                <div class="col-lg-6">
+              <label><i class="fas fa-user-alt"></i></label>
+              <input type="text" name="yourname" value="" placeholder="your Name">
+              <br>
+              <br>
+              <label><i class="fas fa-envelope"></i></label>
+              <input type="email" name="youremail" value="" placeholder="Mail id">
+              <br>
+              <br>
+              <label><i class="far fa-sticky-note"></i></label>
+              <textarea name="yourmessage" rows="4" cols="20" placeholder="message"></textarea>
+              <input type="submit" name="">
+            </div>
+            <div class="col-lg-6">
+              <img src="https://www.signpost.com/wp-content/uploads/2021/11/call-center-customer-service-tips-scaled.jpeg" alt="" style="height: 200px; width:100%;">
+            </div>
+            </div>
+            </form>
+  </div>
+
+</div>
+
+
+          <p><i class="fas fa-phone me-3"></i> + 91 9686516987</p>
           <!-- <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p> -->
         </div>
         <!-- Grid column -->
@@ -312,7 +367,7 @@
   function getdata(data){
     if(data.totalHits=='0')
     {
-      alert("enter a valid food item.");
+      alert("Enter a valid food item.");
     }
     else{
   var main=document.getElementById('api');
@@ -347,10 +402,37 @@
   {
     alert('Enter a valid food item.')
   }
-
+   
  }
 
- 
+
+// When the user clicks on <div>, open the popup
+
+  var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
 </script>
 
 <!-- api -->

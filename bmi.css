@@ -12,10 +12,10 @@ body {
     /* background-color: #03989e; */
 }
 h1,h2{
-    color:rgb(7, 7, 7);
+    color:rgb(255, 255, 255);
 }
 .form {
-    background-color: rgb(11, 208, 230);
+    background-color: rgb(238, 249, 250);
     height: 240px;
     width: 450px;
     border-radius: 20px;
@@ -39,7 +39,7 @@ h1,h2{
     width: 60px;
     height: 30px;
     border-radius: 10px;
-    background-color: #dbeffe;
+    background-color: #fdfdfd;
     border: none;
     outline: none;
     padding: 5px 10px;

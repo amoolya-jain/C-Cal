@@ -8,7 +8,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
     $usermail = $_POST['mail'];
     $password = $_POST['password'];
-
+    session_start();
+    $_SESSION['userId']=$usermail;
     $sql = "select * from customer_details where email='$usermail' AND password='$password' ";
     $result = mysqli_query($con,$sql);
     $num=mysqli_num_rows($result);
